@@ -57,12 +57,12 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-lg border border-slate-200 p-8">
-      <h2 className="text-2xl font-bold text-slate-900 mb-6">Create New User</h2>
+    <form onSubmit={handleSubmit} className="bg-stone-50 rounded-lg border border-stone-200 p-8">
+      <h2 className="text-2xl font-bold text-stone-900 mb-6">Create New User</h2>
       
       <div className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-2">
             Name *
           </label>
           <input
@@ -71,8 +71,8 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 ${
-              errors.name ? 'border-red-500' : 'border-slate-300'
+            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white ${
+              errors.name ? 'border-red-500' : 'border-stone-300'
             }`}
             placeholder="Enter full name"
           />
@@ -80,7 +80,7 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-2">
             Email *
           </label>
           <input
@@ -89,8 +89,8 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 ${
-              errors.email ? 'border-red-500' : 'border-slate-300'
+            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white ${
+              errors.email ? 'border-red-500' : 'border-stone-300'
             }`}
             placeholder="Enter email address"
           />
@@ -98,7 +98,7 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="phone" className="block text-sm font-medium text-stone-700 mb-2">
             Phone *
           </label>
           <input
@@ -107,8 +107,8 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 ${
-              errors.phone ? 'border-red-500' : 'border-slate-300'
+            className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white ${
+              errors.phone ? 'border-red-500' : 'border-stone-300'
             }`}
             placeholder="Enter phone number"
           />
@@ -116,7 +116,7 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
         </div>
 
         <div>
-          <label htmlFor="website" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="website" className="block text-sm font-medium text-stone-700 mb-2">
             Website
           </label>
           <input
@@ -125,13 +125,13 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
             name="website"
             value={formData.website}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-stone-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white"
             placeholder="Enter website URL"
           />
         </div>
 
         <div>
-          <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="company" className="block text-sm font-medium text-stone-700 mb-2">
             Company
           </label>
           <input
@@ -140,7 +140,7 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-stone-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white"
             placeholder="Enter company name"
           />
         </div>
@@ -148,14 +148,15 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
         <div className="flex gap-4 pt-4">
           <button
             type="submit"
-            className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+            className="flex-1 text-white py-2 px-4 rounded-md"
+            style={{ backgroundColor: '#7fd4e1' }}
           >
             Create User
           </button>
           <button
             type="button"
             onClick={() => setFormData({ name: '', email: '', phone: '', website: '', company: '' })}
-            className="px-4 py-2 border border-slate-300 text-slate-700 rounded-md hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 transition-colors"
+            className="px-4 py-2 border border-stone-300 text-stone-700 rounded-md hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2 transition-colors"
           >
             Clear
           </button>

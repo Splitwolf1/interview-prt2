@@ -10,14 +10,20 @@ export default async function UsersPage() {
   
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-slate-900">Users Dashboard</h1>
-        <Link
-          href="/users/create"
-          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-        >
-          Create User
-        </Link>
+      <div className="bg-stone-700 rounded-lg border border-stone-600 p-6 mb-8 shadow-sm">
+        <div className="flex justify-between items-center">
+          <div>
+            <h1 className="text-3xl font-bold text-stone-100 mb-1">Users Dashboard</h1>
+            <p className="text-stone-300">Manage and explore user information</p>
+          </div>
+          <Link
+            href="/users/create"
+            className="inline-flex items-center px-4 py-2 text-white font-medium rounded-lg"
+            style={{ backgroundColor: '#7fd4e1' }}
+          >
+            Create User
+          </Link>
+        </div>
       </div>
       
       <Suspense fallback={<Loading />}>
