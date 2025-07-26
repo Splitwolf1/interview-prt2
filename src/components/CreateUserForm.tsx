@@ -149,7 +149,7 @@ export default function CreateUserForm({ onSubmit }: CreateUserFormProps) {
           <button
             type="submit"
             className="flex-1 text-white py-2 px-4 rounded-md"
-            style={{ backgroundColor: '#7fd4e1' }}
+            style={{ backgroundColor: '#4b9fc3' }}
           >
             Create User
           </button>

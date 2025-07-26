@@ -19,7 +19,7 @@ export default async function UsersPage() {
           <Link
             href="/users/create"
             className="inline-flex items-center px-4 py-2 text-white font-medium rounded-lg"
-            style={{ backgroundColor: '#7fd4e1' }}
+            style={{ backgroundColor: '#4b9fc3' }}
           >
             Create User
           </Link>
