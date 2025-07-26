@@ -46,7 +46,8 @@ export default function CreateUserPage() {
       <div className="mb-6">
         <Link
           href="/users"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+          className="inline-flex items-center px-4 py-2 text-white font-medium rounded-lg"
+          style={{ backgroundColor: '#7fd4e1' }}
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

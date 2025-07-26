@@ -61,8 +61,7 @@ export default function UserTable({ users }: UserTableProps) {
               <td className="px-6 py-4 whitespace-nowrap text-sm">
                 <Link
                   href={`/users/${user.id}`}
-                  className="font-medium"
-                  style={{ color: '#7fd4e1' }}
+                  className="text-blue-600 hover:text-blue-800 font-medium"
                 >
                   View Details
                 </Link>
